@@ -1,0 +1,89 @@
+@import 'variables.scss';
+@import '_responsive.scss';
+@import '_mixins';
+
+section.styleguide {
+  .style-container {
+    .style-section {
+      padding: 2rem 0rem;
+
+      &__header {
+        text-decoration: underline $primary-text-color;
+      }
+
+      &__item {
+        padding: 0.5rem 0rem;
+      }
+
+      &__color-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>* {
+          margin: 1rem 1rem;
+        }
+
+        .color-swatch {
+          height: 50px;
+          width: 50px;
+          border-radius: 100%;
+          background: red;
+          border: 1px solid white;
+        }
+
+        &:nth-of-type(2) .color-swatch {
+          background: $primary-color;
+        }
+
+
+        &:nth-of-type(3) .color-swatch {
+          background: $secondary-color;
+        }
+
+
+        &:nth-of-type(4) .color-swatch {
+          background: $tertiary-color;
+        }
+      }
+    }
+  }
+}
+
+
+@include respond(tab-land) {
+  section.styleguide {
+    text-align: center;
+
+    .style-container {
+      .style-section {
+        padding: 2rem 0rem;
+
+        &__header {
+          text-align: center;
+        }
+
+        &__item {
+          padding: 0.5rem 0rem;
+        }
+
+        &__color-item {
+          justify-content: space-between;
+          align-items: center;
+
+          &>* {
+            margin: 0.5rem 0.5rem;
+          }
+
+          .color-swatch {
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+          }
+
+        }
+      }
+    }
+  }
+
+}

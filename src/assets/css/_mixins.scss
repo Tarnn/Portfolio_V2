@@ -1,0 +1,26 @@
+@import 'variables';
+
+@mixin font($element) {
+    @if $element == p {
+        color: $primary-text-color;
+        font-family: $primary-font-family;
+        font-weight: 0;
+    }
+
+    @if $element ==  h2 or $element == h1 or $element == h3 {
+        color: $primary-text-color;
+        font-family: $primary-font-family;
+        font-weight: 600;
+    }
+
+    @if $element == h4 or $element == h5 {
+        color: $secondary-text-color;
+        font-family: $secondary-font-family;
+        font-weight: 400;
+    }
+
+    @if $element == a {
+        color: $secondary-text-color !important;
+        font-family: $secondary-font-family;
+    }
+}
