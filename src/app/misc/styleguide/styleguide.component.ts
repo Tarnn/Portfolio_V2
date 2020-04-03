@@ -7,13 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StyleguideComponent implements OnInit {
 
-  constructor() {
-    console.log('StyleGuide Loaded...');
+  constructor() { }
 
-   }
-
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void { }
 
 }

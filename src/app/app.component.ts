@@ -15,11 +15,8 @@ export class AppComponent implements OnInit, OnDestroy{
   routerSubscription: Subscription;
   styleGuide: boolean = false;
 
-  constructor(private router: Router) {
-    console.log('App Component Loaded...');
+  constructor(private router: Router) { }
 
-  }
-  
   ngOnInit(): void {
     this.routerSubscription = this.router.events.subscribe( event => {
       if (event instanceof NavigationEnd) {
