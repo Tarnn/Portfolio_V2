@@ -1,17 +1,17 @@
 <section class="hero">
   <div class="hero-container">
-    <h5>Hello, I am</h5>
-    <h2>Taranjit Kang.</h2>
-    <h3>I code things for the web.</h3>
+    <h5 [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 150 } }" [@fadeOutOnLeave]>Hello, I am</h5>
+    <h2 [@fadeInOnEnter]="{ value: '', params: { delay: 2 * 150 } }" [@fadeOutOnLeave]>Taranjit Kang.</h2>
+    <h3 [@fadeInOnEnter]="{ value: '', params: { delay: 3 * 150 } }" [@fadeOutOnLeave]>I code things for the web.</h3>
     <div class="hero-container__lead">
-      <p class="lead">
+      <p class="lead" [@fadeInOnEnter]="{ value: '', params: { delay: 4 * 150 } }" [@fadeOutOnLeave]> 
         I'm a software engineer based in Toronto, ON specializing in building exceptional, high-quality
          websites, applications and apis.
       </p>
     </div>
 
     <div class="hero-container__cta">
-      <a class="btn btn-outline-success btn-outline-custom" type="submit" href="mailto:taranjitk18@gmail.com">Get In Touch</a>
+      <a [@fadeInOnEnter]="{ value: '', params: { delay: 5 * 150 } }" [@fadeOutOnLeave] class="btn btn-outline-success btn-outline-custom" type="submit" href="mailto:taranjitk18@gmail.com">Get In Touch</a>
     </div>
   </div>
   <canvas class="background"></canvas>
