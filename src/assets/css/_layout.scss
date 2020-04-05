@@ -47,3 +47,16 @@ section {
     padding: 8rem 0rem;
   }
 }
+
+
+@include respond(phone) {
+  section {
+    .section-header {
+      &__header {
+        &:after {
+          width: 140px;
+        }
+      }
+    }
+  }
+}

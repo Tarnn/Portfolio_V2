@@ -85,25 +85,28 @@ section.about {
 }
 
 @include respond(tab-port) {
-    section.about {
-        .content-container {
+  section.about {
+    .content-container {
 
-          &__skills {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            .skill {
-                padding: 0.5rem;
-    
-              &:nth-of-type(odd) {
-                top: 20px;
-              }
-    
-              &:nth-of-type(even) {
-                bottom: 20px;
-              }
-            }
+      &__skills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .skill {
+          padding: 0.5rem;
+
+          &:nth-of-type(odd) {
+            top: 0px;
+          }
+
+          &:nth-of-type(even) {
+            bottom: 0px;
           }
         }
       }
+    }
+  }
 }
