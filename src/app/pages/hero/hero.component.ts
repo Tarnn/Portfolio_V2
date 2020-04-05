@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var Particles: any;
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
@@ -10,6 +11,11 @@ export class HeroComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    Particles.init({
+      selector: '.background',
+      maxParticles: 450,
+      color: '#CCD6F6'
+    });
   }
 
 }
