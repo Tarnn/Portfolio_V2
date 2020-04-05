@@ -1,3 +1,4 @@
+import { ResumeComponent } from './pages/resume/resume.component';
 import { HomeComponent } from './pages/layout/home/home.component';
 import { AppComponent } from './app.component';
 import { StyleguideComponent } from './misc/styleguide/styleguide.component';
@@ -8,10 +9,16 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes =
   [
     {
+      path: '', redirectTo: '/home', pathMatch: 'full'
+    },
+    {
       path: 'home', component: HomeComponent
     },
     {
       path: 'styleguide', component: StyleguideComponent
+    },
+    {
+      path: 'resume', component: ResumeComponent
     }
   ];
 

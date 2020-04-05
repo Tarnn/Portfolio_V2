@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" routerLink="">[T]</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="isNavbarCollapsed = !isNavbarCollapsed"
+    data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" [ngbCollapse]="isNavbarCollapsed" id="navbarsDefault">
+    <ul class="navbar-nav ml-auto mr-md-5">
+      <li class="nav-item active">
+
+        <div class="d-inline-flex">
+          <a class="nav-link" routerLink="">About <span class="sr-only">(current)</span></a>
+        </div>
+
+      </li>
+      <li class="nav-item">
+
+        <div class="d-inline-flex">
+          <a class="nav-link" routerLink="">Experience</a>
+        </div>
+
+      </li>
+      <li class="nav-item">
+
+        <div class="d-inline-flex">
+          <a class="nav-link" routerLink="">Work</a>
+        </div>
+
+      </li>
+      <li class="nav-item">
+
+        <div class="d-inline-flex">
+          <a class="nav-link" routerLink="">Contact</a>
+        </div>
+
+      </li>
+    </ul>
+    <button class="btn btn-outline-success btn-outline-custom my-2 my-sm-0" type="submit" (click)="goToResumePage()">Resume</button>
+  </div>
+</nav>

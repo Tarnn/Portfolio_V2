@@ -15,10 +15,12 @@ export class AppComponent implements OnInit, OnDestroy{
   routerSubscription: Subscription;
   styleGuide: boolean = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    console.log("Loaded: ", new Date().getTime().toLocaleString())
+   }
 
   ngOnInit(): void {
-    this.routerSubscription = this.router.events.subscribe( event => {
+    this.routerSubscription = this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         switch (event.url) {
           case APP_ROUTE_STYLEGUIDE:

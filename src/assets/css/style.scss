@@ -3,40 +3,31 @@
 @import '_responsive';
 @import '_mixins';
 @import '_utils';
+@import '_typography';
 
 body {
-    background: $primary-color;
+  background: $primary-color;
 }
 
 section {
-    padding: 5rem 0rem;
+  padding: 5rem 0rem;
 }
 
+.btn-outline-custom {
+  color: $primary-text-color !important;
+  border-color: $secondary-color !important;
 
-h1 {
-    @include font(h1);
-}
+  &:hover {
+    background-color: rgba($secondary-color, .1);
+    color: $primary-text-color !important;
+  }
 
-h2 {
-    @include font(h2);
-}
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($secondary-color, .5) !important;
+  }
 
-h3 {
-    @include font(h3);
-}
+  &:active {
+    background-color: rgba($secondary-color, .8) !important;
+  }
 
-h4 {
-    @include font(h4);
-}
-
-h5 {
-    @include font(h5);
-}
-
-p {
-    @include font(p);
-}
-
-a {
-    @include font(a);
 }

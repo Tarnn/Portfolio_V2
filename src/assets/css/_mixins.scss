@@ -20,7 +20,7 @@
     }
 
     @if $element == a {
-        color: $secondary-text-color !important;
+        color: $primary-text-color !important;
         font-family: $secondary-font-family;
     }
 }

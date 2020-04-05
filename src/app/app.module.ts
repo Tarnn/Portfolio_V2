@@ -13,6 +13,7 @@ import { LeftNavComponent } from './pages/left-nav/left-nav.component';
 import { RightNavComponent } from './pages/right-nav/right-nav.component';
 import { StyleguideComponent } from './misc/styleguide/styleguide.component';
 import { HomeComponent } from './pages/layout/home/home.component';
+import { NavbarComponent } from './pages/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeComponent } from './pages/layout/home/home.component';
     LeftNavComponent,
     RightNavComponent,
     StyleguideComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
