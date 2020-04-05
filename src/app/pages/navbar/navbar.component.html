@@ -10,28 +10,28 @@
       <li class="nav-item active">
 
         <div class="d-inline-flex">
-          <a class="nav-link" routerLink="">About <span class="sr-only">(current)</span></a>
+          <a class="nav-link" [routerLink]="['/home']" fragment="about" (click)="anchorClick()">About <span class="sr-only">(current)</span></a>
         </div>
 
       </li>
       <li class="nav-item">
 
         <div class="d-inline-flex">
-          <a class="nav-link" routerLink="">Experience</a>
+          <a class="nav-link" [routerLink]="['/home']" fragment="experience" (click)="anchorClick()">Experience</a>
         </div>
 
       </li>
       <li class="nav-item">
 
         <div class="d-inline-flex">
-          <a class="nav-link" routerLink="">Work</a>
+          <a class="nav-link" [routerLink]="['/home']" fragment="work" (click)="anchorClick()">Work</a>
         </div>
 
       </li>
       <li class="nav-item">
 
         <div class="d-inline-flex">
-          <a class="nav-link" routerLink="">Contact</a>
+          <a class="nav-link" [routerLink]="['/home']" fragment="contact" (click)="anchorClick()">Contact</a>
         </div>
 
       </li>
