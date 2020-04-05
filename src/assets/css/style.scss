@@ -5,17 +5,23 @@
 @import '_utils';
 @import '_typography';
 
-body {
-  background: $primary-color;
+html {
+    height: 100%;
+    width: 100%;
 }
 
-section {
-  padding: 5rem 0rem;
+body {
+  background: $primary-color;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 .btn-outline-custom {
-  color: $primary-text-color !important;
+  color: $secondary-color !important;
   border-color: $secondary-color !important;
+  font-family: $secondary-font-family;
 
   &:hover {
     background-color: rgba($secondary-color, .1);
