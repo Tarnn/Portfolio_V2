@@ -14,7 +14,13 @@ export class HeroComponent implements OnInit {
     Particles.init({
       selector: '.background',
       maxParticles: 450,
-      color: '#CCD6F6'
+      color: '#CCD6F6',
+      responsive: [{
+        breakpoint: 800,
+        options: {
+          maxParticles: 80,
+        }
+      }]
     });
   }
 
