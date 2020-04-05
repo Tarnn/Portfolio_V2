@@ -24,3 +24,7 @@
         font-family: $secondary-font-family;
     }
 }
+
+@mixin element-color($color) {
+    background-image: url('data:image/svg+xml;utf8,<svg ...><path fill="#{$color}" ... /></svg>');
+  }

@@ -5,6 +5,14 @@
 }
 
 section {
-    padding: 7rem 0rem;
+    padding: 13rem 0rem;
     max-width: 1000px;
+}
+
+section {
+    .section-header {
+        &__header {
+           color: green; 
+        }
+    }
 }
