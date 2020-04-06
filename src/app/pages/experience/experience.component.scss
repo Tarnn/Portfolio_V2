@@ -20,20 +20,6 @@ section.experience {
   }
 }
 
-@include respond(phone) {
-  section.experience {
-    .section-header {
-      margin-left: 0;
-
-      &__header {
-        &:after {
-          left: 195px;
-        }
-      }
-    }
-  }
-}
-
 
 @include respond(tab-port) {
   section.experience {
@@ -48,3 +34,17 @@ section.experience {
     }
   }
 }
+
+@include respond(phone) {
+    section.experience {
+      .section-header {
+        margin-left: 0;
+  
+        &__header {
+          &:after {
+            left: 195px;
+          }
+        }
+      }
+    }
+  }
