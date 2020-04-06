@@ -13,8 +13,8 @@
         veritatis optio voluptatem officia quas autem commodi obcaecati laborum.</p>
     </div>
     <div class="content-container__image" *ngIf="animateSocialIcons"  [@bounceInRightOnEnter]="{ value: '', params: { delay: 1 * 150 } }">
-      <img src="https://i.picsum.photos/id/433/200/300.jpg" alt="profile" srcset="">
-      <div class="content-container__image--overlay"></div>
+      <img src="/assets/images/picture.jpg" alt="profile">
+      <div class="content-container__image--overlay" (click)="navigateToLinkedIn()"></div>
     </div>
 
     <div class="content-container__skills">

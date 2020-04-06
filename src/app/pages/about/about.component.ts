@@ -1,3 +1,4 @@
+import { LINKEDIN_URL } from './../../app.constants';
 import { Component, OnInit } from '@angular/core';
 import { fadeInOnEnterAnimation, bounceInRightOnEnterAnimation } from 'angular-animations';
 
@@ -21,6 +22,10 @@ export class AboutComponent implements OnInit {
     if (visible) {
       this.animateSocialIcons = true;
     }
+  }
+
+  navigateToLinkedIn(): void {
+    window.location.href = LINKEDIN_URL;
   }
 
 }
