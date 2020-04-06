@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InViewportModule } from 'ng-in-viewport';
 
 @NgModule({
   declarations: [],
@@ -10,11 +11,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     BrowserAnimationsModule,
     NgbModule,
-    PdfViewerModule
+    PdfViewerModule,
+    InViewportModule
   ],
   exports: [
     NgbModule,
-    PdfViewerModule
+    PdfViewerModule,
+    InViewportModule
   ]
 })
 export class SharedModule { }

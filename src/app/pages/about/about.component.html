@@ -1,10 +1,10 @@
 <section class="about" id="about">
-  <div class="section-header">
+  <div class="section-header" inViewport [inViewportOptions]="{ threshold: [0] }" (inViewportAction)="onIntersection($event)">
     <h3 class="section-header__header">About Me</h3>
   </div>
 
   <div class="content-container d-md-flex flex-md-wrap justify-content-between">
-    <div class="content-container__text">
+    <div *ngIf="animateSocialIcons" class="content-container__text" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 150 } }">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit quia quis, vitae ea suscipit quam magnam
         magni tempore dolor voluptatum,
         corrupti natus error cum amet nam repellendus ex soluta.</p>
@@ -12,24 +12,24 @@
         perspiciatis molestiae, perferendis cupiditate
         veritatis optio voluptatem officia quas autem commodi obcaecati laborum.</p>
     </div>
-    <div class="content-container__image">
-      <img src="https://i.picsum.photos/id/433/200/300.jpg" alt="" srcset="">
+    <div class="content-container__image" *ngIf="animateSocialIcons"  [@bounceInRightOnEnter]="{ value: '', params: { delay: 1 * 150 } }">
+      <img src="https://i.picsum.photos/id/433/200/300.jpg" alt="profile" srcset="">
       <div class="content-container__image--overlay"></div>
     </div>
 
     <div class="content-container__skills">
-        <img class="skill" src="/assets/icons/skills/java.svg" alt="Java" ngbTooltip="Java">
-        <img class="skill" src="/assets/icons/skills/spring.svg" alt="Spring Boot (Microservices)" ngbTooltip="Spring Boot (Microservices)">
-        <img class="skill" src="/assets/icons/skills/docker.svg" alt="Docker" ngbTooltip="Docker">
-        <img class="skill" src="/assets/icons/skills/kubernetes.svg" alt="Kubernetes" ngbTooltip="Kubernetes">
-        <img class="skill" src="/assets/icons/skills/javascript.svg" alt="Javascript" ngbTooltip="Javascript">
-        <img class="skill" src="/assets/icons/skills/typescript.svg" alt="Typescript" ngbTooltip="Typescript">
-        <img class="skill" src="/assets/icons/skills/angularjs.svg" alt="AngularJs" ngbTooltip="AngularJs (2+)">
-        <img class="skill" src="/assets/icons/skills/css3.svg" alt="CSS3" ngbTooltip="CSS3">
-        <img class="skill" src="/assets/icons/skills/amazonaws.svg" alt="Amazon Web Services" ngbTooltip="Amazon Web Services (Cloud)">
-        <img class="skill" src="/assets/icons/skills/github.svg" alt="Github" ngbTooltip="Github">
-        <img class="skill" src="/assets/icons/skills/jenkins.svg" alt="Jenkins" ngbTooltip="Jenkins (CI/CD)">
-        <img class="skill" src="/assets/icons/skills/jira.svg" alt="Jira" ngbTooltip="Jira (Agile)">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/java.svg" alt="Java" ngbTooltip="Java" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 150 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/spring.svg" alt="Spring Boot (Microservices)" ngbTooltip="Spring Boot (Microservices)" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 200 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/docker.svg" alt="Docker" ngbTooltip="Docker" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 250 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/kubernetes.svg" alt="Kubernetes" ngbTooltip="Kubernetes" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 300 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/javascript.svg" alt="Javascript" ngbTooltip="Javascript" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 350 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/typescript.svg" alt="Typescript" ngbTooltip="Typescript" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 400 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/angularjs.svg" alt="AngularJs" ngbTooltip="AngularJs (2+)" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 450 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/css3.svg" alt="CSS3" ngbTooltip="CSS3" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 500 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/amazonaws.svg" alt="Amazon Web Services" ngbTooltip="Amazon Web Services (Cloud)" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 550 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/github.svg" alt="Github" ngbTooltip="Github" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 600 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/jenkins.svg" alt="Jenkins" ngbTooltip="Jenkins (CI/CD)" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 650 } }">
+        <img *ngIf="animateSocialIcons" class="skill" src="/assets/icons/skills/jira.svg" alt="Jira" ngbTooltip="Jira (Agile)" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 700 } }">
     </div>
   </div>
 </section>
