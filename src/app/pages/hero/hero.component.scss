@@ -31,16 +31,15 @@
       max-width: 500px;
       margin-top: 2.5rem;
       line-height: 1.3;
-
-      p.lead {}
     }
 
     &__cta {
       margin-top: 2.5rem;
 
-      a {
+      button {
         font-size: 1rem;
-        padding: 1rem;
+        padding: 1.25rem;
+        transition: all 1s ease;
       }
     }
   }
@@ -74,7 +73,7 @@
       }
 
       &__cta {
-        a {
+        button {
           font-size: 0.8rem;
         }
       }
@@ -99,7 +98,7 @@
       }
 
       &__cta {
-        a {
+        button {
           font-size: 0.6rem;
         }
       }
