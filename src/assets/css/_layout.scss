@@ -8,7 +8,7 @@
 }
 
 section {
-  padding: 13rem 0rem;
+  padding: 10rem 0rem;
   max-width: 1000px;
 }
 
@@ -42,15 +42,17 @@ section {
   }
 }
 
+
 @include respond(tab-port) {
   section {
-    padding: 8rem 0rem;
+    padding: 6rem 0rem;
   }
 }
 
 
 @include respond(phone) {
   section {
+    padding: 4rem 0rem;
     .section-header {
       &__header {
         &:after {

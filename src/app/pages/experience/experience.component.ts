@@ -12,4 +12,10 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public onIntersection({ target, visible }: { target: Element; visible: boolean }): void {
+    if (visible) {
+      // do stuff here
+    }
+  }
+
 }

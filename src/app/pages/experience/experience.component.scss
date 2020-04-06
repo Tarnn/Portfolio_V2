@@ -1,0 +1,50 @@
+@import '_responsive';
+
+$moveLeft: 5rem;
+
+section.experience {
+  .section-header {
+    margin-left: $moveLeft;
+
+    &__header {
+      counter-increment: section 2;
+
+      &:after {
+        left: 200px;
+      }
+
+      &:before {
+        content: "0"counter(section) ".";
+      }
+    }
+  }
+}
+
+@include respond(phone) {
+  section.experience {
+    .section-header {
+      margin-left: 0;
+
+      &__header {
+        &:after {
+          left: 195px;
+        }
+      }
+    }
+  }
+}
+
+
+@include respond(tab-port) {
+  section.experience {
+    .section-header {
+      margin-left: $moveLeft / 2;
+
+      &__header {
+        &:after {
+          left: 185px;
+        }
+      }
+    }
+  }
+}
