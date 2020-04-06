@@ -2,10 +2,6 @@
 @import '_responsive';
 
 section.about {
-  .section-header {
-    &__header {}
-  }
-
   .content-container {
     &__text {
       max-width: 600px;
@@ -29,6 +25,7 @@ section.about {
         bottom: 2rem;
         left: 3rem;
         z-index: -99;
+        transition: all 1s ease-in-out;
       }
 
       &--overlay {
@@ -47,6 +44,12 @@ section.about {
         background: rgba($secondary-color, .5);
       }
 
+      &:hover:before {
+        border: 15px solid $primary-text-color;
+        bottom: 0rem;
+        left: 0rem;
+        opacity: 0;
+      }
     }
 
     &__skills {
@@ -68,12 +71,7 @@ section.about {
 }
 
 @include respond(tab-land) {
-
   section.about {
-    .section-header {
-      &__header {}
-    }
-
     .content-container {
       display: flex;
       flex-direction: column;
@@ -88,7 +86,7 @@ section.about {
         order: 3;
         position: relative;
         margin-bottom: 2rem;
-        text-align: center;
+        align-self: center;
 
         img {
           height: 200px;
@@ -98,6 +96,17 @@ section.about {
         &:before {
           height: 200px;
           width: 300px;
+        }
+
+        &--overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 200px;
+          width: 300px;
+          display: block;
+          opacity: 0;
+          transition: opacity 700ms ease-in;
         }
       }
 
@@ -131,6 +140,16 @@ section.about {
             bottom: 0px;
           }
         }
+      }
+    }
+  }
+}
+
+@include respond(phone) {
+  section.about {
+    .content-container {
+      &__image {
+        margin-right: 2.7rem;
       }
     }
   }
