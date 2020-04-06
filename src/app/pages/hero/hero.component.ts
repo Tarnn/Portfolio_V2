@@ -1,3 +1,4 @@
+import { MAIL_LINK } from './../../app.constants';
 import { Component, OnInit } from '@angular/core';
 import { fadeInOnEnterAnimation, fadeOutOnLeaveAnimation } from 'angular-animations';
 
@@ -27,6 +28,10 @@ export class HeroComponent implements OnInit {
         }
       }]
     });
+  }
+
+  mail(): void {
+    window.location.href = MAIL_LINK;
   }
 
 }
