@@ -14,6 +14,7 @@ import { RightNavComponent } from './pages/right-nav/right-nav.component';
 import { StyleguideComponent } from './misc/styleguide/styleguide.component';
 import { HomeComponent } from './pages/layout/home/home.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
+import { LoaderComponent } from './misc/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
     RightNavComponent,
     StyleguideComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+@import '_responsive';
+@import 'variables';
+
+.loader {
+    padding: 0rem 3rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $primary-color;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader-logo {
+    #path2 {
+        fill: $secondary-text-color;
+        stroke: $secondary-text-color;
+        stroke-dasharray: 560px;
+        stroke-dashoffset: 700px;
+        animation: line-anim 2.5s ease forwards;
+    }
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

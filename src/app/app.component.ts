@@ -14,12 +14,18 @@ import { APP_ROUTE_STYLEGUIDE } from './app.constants';
 export class AppComponent implements OnInit, OnDestroy{
   routerSubscription: Subscription;
   styleGuide: boolean = false;
+  isLoading: boolean = true;
 
   constructor(private router: Router) {
     console.log("Loaded: ", new Date().getTime().toLocaleString())
    }
 
   ngOnInit(): void {
+
+    setTimeout(() => {
+      console.log("Timeout!")
+      this.isLoading = false;
+    }, 3000);
 
     this.routerSubscription = this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
