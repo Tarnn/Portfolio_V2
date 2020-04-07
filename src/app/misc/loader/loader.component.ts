@@ -11,13 +11,11 @@ import { fadeInOnEnterAnimation, fadeOutOnLeaveAnimation } from 'angular-animati
   ]
 })
 export class LoaderComponent implements OnInit {
-  @ViewChild('loader') pathTwo: ElementRef;
   @Input('isLoading') isLoading: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  ngAfterViewInit() {
-  }
+
 }

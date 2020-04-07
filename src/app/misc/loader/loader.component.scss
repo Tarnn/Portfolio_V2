@@ -19,7 +19,7 @@
     animation: fill 1s ease forwards 2s;
 
     path {
-        stroke: $secondary-text-color;
+        stroke: $primary-text-color;
     }
 
     path:nth-child(2)  {
@@ -108,7 +108,7 @@
         fill: transparent;
     }
     to {
-        fill: $secondary-text-color;
+        fill: $primary-text-color;
     }
 }
 

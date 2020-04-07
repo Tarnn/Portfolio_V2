@@ -24,7 +24,7 @@ export class AppComponent implements OnInit, OnDestroy{
 
     setTimeout(() => {
       this.isLoading = false;
-    }, 3800);
+    }, 2400);
 
     this.routerSubscription = this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
