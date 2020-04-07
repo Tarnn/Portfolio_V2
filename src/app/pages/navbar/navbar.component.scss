@@ -3,13 +3,13 @@
 .navbar {
   .navbar-brand {
     img {
-        position: relative;
-        width: 50px;
-        transition: all 1s ease;
+      position: relative;
+      width: 50px;
+      transition: all 1s ease;
 
-        &:hover {
-            animation: rotate 2s ease forwards ;
-        }
+      &:hover {
+        animation: rotate 2s ease forwards;
+      }
     }
   }
 
@@ -35,10 +35,11 @@
 
 
 @keyframes rotate {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
 }
