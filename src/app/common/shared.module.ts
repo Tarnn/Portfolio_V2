@@ -4,6 +4,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InViewportModule } from 'ng-in-viewport';
+import {NgxTypedJsModule} from 'ngx-typed-js';
 
 @NgModule({
   declarations: [],
@@ -12,12 +13,14 @@ import { InViewportModule } from 'ng-in-viewport';
     BrowserAnimationsModule,
     NgbModule,
     PdfViewerModule,
-    InViewportModule
+    InViewportModule,
+    NgxTypedJsModule
   ],
   exports: [
     NgbModule,
     PdfViewerModule,
-    InViewportModule
+    InViewportModule,
+    NgxTypedJsModule
   ]
 })
 export class SharedModule { }

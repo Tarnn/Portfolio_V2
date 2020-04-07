@@ -2,7 +2,10 @@
   <div class="hero-container">
     <h5 [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 300 } }">Hello, I am</h5>
     <h2 [@fadeInOnEnter]="{ value: '', params: { delay: 2 * 300 } }">Taranjit Kang.</h2>
-    <h3 [@fadeInOnEnter]="{ value: '', params: { delay: 3 * 300 } }">I code things for the web.</h3>
+    <h3 [@fadeInOnEnter]="{ value: '', params: { delay: 3 * 300 } }">
+      <ngx-typed-js [strings]="heroText" [shuffle]="true" [loop]="true" [typeSpeed]="100" [fadeOut]="true">
+      I code things for <span class="typing"></span>
+    </ngx-typed-js></h3>
     <div class="hero-container__lead">
       <p class="lead" [@fadeInOnEnter]="{ value: '', params: { delay: 4 * 300 } }"> 
         I'm a software engineer based in Toronto, ON specializing in building exceptional, high-quality

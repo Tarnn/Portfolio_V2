@@ -1,4 +1,4 @@
-import { MAIL_LINK } from './../../app.constants';
+import { MAIL_LINK, HERO_SUBTEXT_STRINGS } from './../../app.constants';
 import { Component, OnInit } from '@angular/core';
 import { fadeInOnEnterAnimation, fadeOutOnLeaveAnimation } from 'angular-animations';
 
@@ -13,6 +13,7 @@ declare var Particles: any;
   ]
 })
 export class HeroComponent implements OnInit {
+  heroText: string[] = HERO_SUBTEXT_STRINGS;
 
   constructor() { }
 
