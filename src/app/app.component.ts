@@ -23,9 +23,8 @@ export class AppComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
 
     setTimeout(() => {
-      console.log("Timeout!")
       this.isLoading = false;
-    }, 3000);
+    }, 3800);
 
     this.routerSubscription = this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
