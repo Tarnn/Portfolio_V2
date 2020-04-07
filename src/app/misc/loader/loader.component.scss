@@ -16,8 +16,9 @@
 }
 
 #loader-logo {
+    position: relative;
     animation: fill 1.5s ease forwards 2.2s;
-
+    animation: toTheLeftCorner 3s ease forwards 2.2s;
     path {
         stroke: transparent;
     }
@@ -55,5 +56,12 @@
 @keyframes line-anim {
     to {
         stroke-dashoffset: 0;
+    }
+}
+
+@keyframes toTheLeftCorner {
+    to {
+        transform:translate(calc(50px - 100vw), calc(50px - 100vh));
+        opacity: 0;
     }
 }
