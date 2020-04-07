@@ -43,3 +43,11 @@ body {
   -moz-box-shadow: 2px 13px 13px -16px rgba(0,0,0,0.75);
   box-shadow: 2px 13px 13px -16px rgba(0,0,0,0.75);
 }
+
+@include respond(tab-port){
+  .nav-wrapper {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
