@@ -1,4 +1,5 @@
 @import '_responsive';
+@import 'variables';
 
 $moveLeft: 5rem;
 
@@ -18,6 +19,15 @@ section.experience {
       }
     }
   }
+
+  .nav-pills {
+    width: 1000px;
+    
+    .active {
+      background: none !important;
+      border: 1px solid $secondary-text-color;
+    }
+  }
 }
 
 
@@ -32,6 +42,7 @@ section.experience {
         }
       }
     }
+
   }
 }
 
@@ -43,6 +54,16 @@ section.experience {
         &__header {
           &:after {
             left: 195px;
+          }
+        }
+      }
+      .nav-pills {
+        width: 750px;
+        div {
+          transition: all 1s ease;
+
+          p {
+            transition: all 1s ease;
           }
         }
       }

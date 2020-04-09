@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
+  selector: 'app-work',
+  templateUrl: './work.component.html',
+  styleUrls: ['./work.component.scss']
 })
-export class ExperienceComponent implements OnInit {
-  active = 'top';
+export class WorkComponent implements OnInit {
 
   constructor() { }
 
@@ -15,8 +14,7 @@ export class ExperienceComponent implements OnInit {
 
   public onIntersection({ target, visible }: { target: Element; visible: boolean }): void {
     if (visible) {
-      // do stuff here
+      // do stuff here for visibile elements
     }
   }
-
 }

@@ -15,6 +15,7 @@ import { StyleguideComponent } from './misc/styleguide/styleguide.component';
 import { HomeComponent } from './pages/layout/home/home.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { LoaderComponent } from './misc/loader/loader.component';
+import { WorkComponent } from './pages/work/work.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LoaderComponent } from './misc/loader/loader.component';
     StyleguideComponent,
     HomeComponent,
     NavbarComponent,
-    LoaderComponent
+    LoaderComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
