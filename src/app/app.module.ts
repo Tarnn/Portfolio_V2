@@ -17,6 +17,7 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { LoaderComponent } from './misc/loader/loader.component';
 import { WorkComponent } from './pages/work/work.component';
 import { AnchorComponent } from './misc/anchor/anchor.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AnchorComponent } from './misc/anchor/anchor.component';
     NavbarComponent,
     LoaderComponent,
     WorkComponent,
-    AnchorComponent
+    AnchorComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
