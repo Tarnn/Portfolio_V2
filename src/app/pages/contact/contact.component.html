@@ -1,7 +1,15 @@
 <section class="contact" id="contact">
-    <div class="section-header" inViewport [inViewportOptions]="{ threshold: [0] }"
+    <!-- <div class="section-header" inViewport [inViewportOptions]="{ threshold: [0] }"
       (inViewportAction)="onIntersection($event)">
-      <h3 class="section-header__header">Contact</h3>
+      <h3 class="section-header__header">What's next?</h3>
+    </div> -->
+
+    <div class="section-content">
+        <h2>Get in Touch!</h2>
+        <p>Although, I am currently not looking actively for new opportunities. My mailbox is always open, come say hello. I'll try my best to answer your email, ASAP.</p>
+        <div class="hero-container__cta">
+            <button class="btn btn-outline-success btn-outline-custom" type="submit" (click)="mail()">Say What's Up</button>
+          </div>
     </div>
   
   </section>

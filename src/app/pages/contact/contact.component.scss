@@ -10,13 +10,18 @@ section.contact {
       counter-increment: section 4;
 
       &:after {
-        left: 200px;
+        left: 220px;
       }
 
       &:before {
         content: "0"counter(section) ".";
       }
     }
+  }
+
+  .section-content {
+      max-width: 800px;
+      text-align: center;
   }
 }
 
