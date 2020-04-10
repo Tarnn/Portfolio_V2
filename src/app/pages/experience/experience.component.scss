@@ -4,9 +4,8 @@
 $moveLeft: 5rem;
 
 section.experience {
+  margin-left: $moveLeft;
   .section-header {
-    margin-left: $moveLeft;
-
     &__header {
       counter-increment: section 2;
 
@@ -21,8 +20,7 @@ section.experience {
   }
 
   .nav-pills {
-    width: 1000px;
-    
+    width: 1200px;    
     .active {
       background: none !important;
       border: 1px solid $secondary-text-color;
@@ -33,9 +31,8 @@ section.experience {
 
 @include respond(tab-port) {
   section.experience {
+    margin-left: $moveLeft / 2;
     .section-header {
-      margin-left: $moveLeft / 2;
-
       &__header {
         &:after {
           left: 185px;
@@ -48,6 +45,7 @@ section.experience {
 
 @include respond(phone) {
     section.experience {
+      margin-left: 0;
       .section-header {
         margin-left: 0;
   

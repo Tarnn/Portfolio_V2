@@ -16,6 +16,7 @@ import { HomeComponent } from './pages/layout/home/home.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { LoaderComponent } from './misc/loader/loader.component';
 import { WorkComponent } from './pages/work/work.component';
+import { AnchorComponent } from './misc/anchor/anchor.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { WorkComponent } from './pages/work/work.component';
     HomeComponent,
     NavbarComponent,
     LoaderComponent,
-    WorkComponent
+    WorkComponent,
+    AnchorComponent
   ],
   imports: [
     BrowserModule,

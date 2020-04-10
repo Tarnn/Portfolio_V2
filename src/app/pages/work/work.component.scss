@@ -4,9 +4,13 @@
 section.projects {
     .section-header {
         &__header {
+            counter-increment: section 3;
             &:after {
-                left: 233px;
+                left: 160px;
             }
+            &:before {
+                content: "0"counter(section) ".";
+              }
         }
     }
 }

@@ -1,68 +1,110 @@
 <section class="experience" id="experience">
-    <div class="section-header" inViewport [inViewportOptions]="{ threshold: [0] }" (inViewportAction)="onIntersection($event)">
-        <h3 class="section-header__header">Experience</h3>
-      </div>
+  <div class="section-header" inViewport [inViewportOptions]="{ threshold: [0] }"
+    (inViewportAction)="onIntersection($event)">
+    <h3 class="section-header__header">Experience</h3>
+  </div>
 
-      <div class="d-flex">
-        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
-          <li ngbNavItem="National Cash Register (NCR)">
-            <a ngbNavLink>NCR</a>
-            <ng-template ngbNavContent>
-              <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-                master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-                keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-                salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-            </ng-template>
-          </li>
-          <li ngbNavItem="Intuit">
-            <a ngbNavLink>Intuit</a>
-            <ng-template ngbNavContent>
-              <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko
-                farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts
-                ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar
-                helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson
-                8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
-                stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
-            </ng-template>
-          </li>
-          <li ngbNavItem="Express Scripts">
-            <a ngbNavLink>Express Scripts</a>
-            <ng-template ngbNavContent>
-              <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi.
-                Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio.
-                Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna,
-                egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec
-                tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et
-                magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget
-                neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
-            </ng-template>
-          </li>
-          <li ngbNavItem="Today's Shopping Choice (TSC)">
-            <a ngbNavLink>TSC</a>
-            <ng-template ngbNavContent>
-              <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi.
-                Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio.
-                Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna,
-                egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec
-                tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et
-                magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget
-                neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
-            </ng-template>
-          </li>
-          <li ngbNavItem="RBC">
-            <a ngbNavLink>RBC</a>
-            <ng-template ngbNavContent>
-              <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi.
-                Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio.
-                Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna,
-                egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec
-                tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et
-                magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget
-                neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
-            </ng-template>
-          </li>
-        </ul>
-      
-        <div [ngbNavOutlet]="nav" class="ml-4"></div>
-      </div>
+  <div class="d-flex">
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+      <li ngbNavItem="National Cash Register (NCR)">
+        <a ngbNavLink>NCR</a>
+        <ng-template ngbNavContent>
+          <p>
+            Enhanced and created new functionality for customer/teller-based application, consumed by US Bank.
+
+            <br><br>
+            Learned proprietary Yaml based SDK Api-toolkit, which featured yaml list code configured to Java actions for
+            performing essential tasks and communicating with containerized Java Spring Boot
+            microservices.
+
+            <br><br>
+            Deployed containerized packaged application via Docker and Kubernetes to local cluster environment via
+            docker and kubectl.
+
+            <br><br>
+            Created E2E tests for development features with Cucumber.
+
+            <br><br>
+            Used BitBucket as SCM, Microsoft Teams, Confluence and Jira for team collaboration.
+
+            <br><br>
+            Configured DEV environment setup via Vagrant.
+
+            <br><br>
+            Acted as release master and build master, which entails ownership over release to prod process, as well as
+            monitored Jenkins pipelines to ensure green CI/CD.
+
+            <br><br>
+            Followed agile principles and methodologies, with 2-week sprints.
+          </p>
+        </ng-template>
+      </li>
+      <li ngbNavItem="Intuit">
+        <a ngbNavLink>Intuit</a>
+        <ng-template ngbNavContent>
+          <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko
+            farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean
+            shorts
+            ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar
+            helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes
+            anderson
+            8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+            stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+        </ng-template>
+      </li>
+      <li ngbNavItem="Express Scripts">
+        <a ngbNavLink>Express Scripts</a>
+        <ng-template ngbNavContent>
+          <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla
+            facilisi.
+            Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et
+            odio.
+            Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam
+            urna,
+            egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim,
+            nec
+            tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus
+            et
+            magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget
+            neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
+        </ng-template>
+      </li>
+      <li ngbNavItem="Today's Shopping Choice (TSC)">
+        <a ngbNavLink>TSC</a>
+        <ng-template ngbNavContent>
+          <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla
+            facilisi.
+            Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et
+            odio.
+            Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam
+            urna,
+            egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim,
+            nec
+            tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus
+            et
+            magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget
+            neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
+        </ng-template>
+      </li>
+      <li ngbNavItem="RBC">
+        <a ngbNavLink>RBC</a>
+        <ng-template ngbNavContent>
+          <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla
+            facilisi.
+            Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et
+            odio.
+            Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam
+            urna,
+            egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim,
+            nec
+            tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus
+            et
+            magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget
+            neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
+        </ng-template>
+      </li>
+    </ul>
+
+    <div [ngbNavOutlet]="nav" class="ml-4"></div>
+  </div>
 </section>
