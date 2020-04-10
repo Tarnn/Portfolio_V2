@@ -40,6 +40,19 @@ section.experience {
       }
     }
 
+    .nav-pills {
+      width: 100%;    
+    }
+
+    .experience-container {
+      flex-direction: column;
+  
+      ul {
+        flex-direction: row !important;
+        margin-bottom: 2rem;
+        transition: all 1s ease;
+      }
+    }
   }
 }
 
