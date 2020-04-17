@@ -7,7 +7,6 @@ import { ANGULAR_IO } from './../../app.constants';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
@@ -16,5 +15,4 @@ export class FooterComponent implements OnInit {
   goToAngular(): void {
     window.location.href = ANGULAR_IO;
   }
-
 }

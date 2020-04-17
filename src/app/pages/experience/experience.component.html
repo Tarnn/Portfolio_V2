@@ -4,9 +4,9 @@
     <h3 class="section-header__header">Experience</h3>
   </div>
 
-  <div class="d-flex experience-container">
-    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
-      <li ngbNavItem="National Cash Register (NCR)">
+  <div *ngIf="animateExperience" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 300 } }" class="d-flex experience-container">
+    <ul ngbNav #nav="ngbNav"  [(activeId)]="active" class="nav-pills" orientation="vertical">
+      <li [@fadeInLeftOnEnter]="{ value: '', params: { delay: 1 * 400 } }" ngbNavItem="National Cash Register (NCR)">
         <a ngbNavLink>NCR</a>
         <ng-template ngbNavContent>
           <h3>Software Engineer @ <a href="https://www.ncr.com/">NCR Corporation</a></h3>
@@ -29,7 +29,7 @@
             Followed agile principles and methodologies, with 2-week sprints.</p>
         </ng-template>
       </li>
-      <li ngbNavItem="Intuit">
+      <li ngbNavItem="Intuit" [@fadeInLeftOnEnter]="{ value: '', params: { delay: 1 * 400 } }">
         <a ngbNavLink>Intuit</a>
         <ng-template ngbNavContent>
           <h3>Senior Software Engineer @ <a href="https://www.intuit.com/">Intuit</a></h3>
@@ -59,7 +59,7 @@
             Pagerduty rotation for features implemented and released to production.</p>
         </ng-template>
       </li>
-      <li ngbNavItem="Express Scripts">
+      <li ngbNavItem="Express Scripts" [@fadeInLeftOnEnter]="{ value: '', params: { delay: 1 * 500 } }">
         <a ngbNavLink>Express Scripts</a>
         <ng-template ngbNavContent>
           <h3>Full Stack Developer @ <a href="https://www.express-scripts.ca/">Express Scripts</a></h3>
@@ -81,7 +81,7 @@
             Followed agile methodologies and contributed to task estimation and planning.</p>
         </ng-template>
       </li>
-      <li ngbNavItem="Today's Shopping Choice (TSC)">
+      <li ngbNavItem="Today's Shopping Choice (TSC)" [@fadeInLeftOnEnter]="{ value: '', params: { delay: 1 * 600 } }">
         <a ngbNavLink>TSC</a>
         <ng-template ngbNavContent>
           <h3>Client Server Developer @ <a href="https://www.tsc.ca/">Today's Shopping Choice</a></h3>
@@ -99,7 +99,7 @@
             Followed agile principles and participated in scrum and task estimation.</p>
         </ng-template>
       </li>
-      <li ngbNavItem="RBC">
+      <li ngbNavItem="RBC" [@fadeInLeftOnEnter]="{ value: '', params: { delay: 1 * 700 } }">
         <a ngbNavLink>RBC</a>
         <ng-template ngbNavContent>
           <h3> Technical Systems Analyst @ <a href="https://www.rbc.com/">RBC</a></h3>

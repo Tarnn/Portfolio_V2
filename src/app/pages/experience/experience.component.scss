@@ -26,6 +26,9 @@ section.experience {
       border: 1px solid $secondary-text-color;
     }
   }
+  .experience-container {
+    height: 300px;
+  }
 }
 
 
@@ -46,6 +49,7 @@ section.experience {
 
     .experience-container {
       flex-direction: column;
+      height: 400px;
   
       ul {
         flex-direction: row !important;
@@ -76,6 +80,9 @@ section.experience {
             transition: all 1s ease;
           }
         }
+      }
+      .experience-container {
+        height: 600px;
       }
     }
   }
