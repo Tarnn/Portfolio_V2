@@ -22,6 +22,8 @@ export class ExperienceComponent implements OnInit {
   public onIntersection({ target, visible }: { target: Element; visible: boolean }): void {
     if (visible) {
       // do stuff here
+      console.log('Visible!')
+      console.log(target);
       this.animateExperience = true;
     }
   }

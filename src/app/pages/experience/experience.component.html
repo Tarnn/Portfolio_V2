@@ -4,7 +4,7 @@
     <h3 class="section-header__header">Experience</h3>
   </div>
 
-  <div *ngIf="animateExperience" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 300 } }" class="d-flex experience-container">
+<div *ngIf="animateExperience" [@fadeInOnEnter]="{ value: '', params: { delay: 1 * 300 } }" class="d-flex experience-container">
     <ul ngbNav #nav="ngbNav"  [(activeId)]="active" class="nav-pills" orientation="vertical">
       <li [@fadeInLeftOnEnter]="{ value: '', params: { delay: 1 * 400 } }" ngbNavItem="National Cash Register (NCR)">
         <a ngbNavLink>NCR</a>

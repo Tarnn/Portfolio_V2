@@ -21,6 +21,7 @@ export class ContactComponent implements OnInit {
 
   public onIntersection({ target, visible }: { target: Element; visible: boolean }): void {
     if (visible) {
+      console.log('Contact Activated')
       this.animateContact = true;
     }
   }

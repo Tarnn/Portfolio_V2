@@ -22,12 +22,20 @@ export class HeroComponent implements OnInit {
       selector: '.background',
       maxParticles: 450,
       color: '#CCD6F6',
-      responsive: [{
+      responsive: [
+        {
         breakpoint: 800,
         options: {
           maxParticles: 80,
         }
-      }]
+        },
+        {
+          breakpoint: 500,
+          options: {
+            maxParticles: 35,
+          }
+        }
+    ]
     });
   }
 

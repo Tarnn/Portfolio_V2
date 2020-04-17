@@ -21,6 +21,12 @@
       height: 150px;
     }
 
+    h3 {
+      span:not(.typing) {
+        display: none;
+      }
+    }
+
 
     h5,
     h2,
@@ -70,6 +76,16 @@
         height: 100px;
       }
 
+      h3 {
+        ngx-typed-js {
+          display: none;
+        }
+
+        span:not(.typing) {
+          display: block;
+        }
+      }
+
       &__lead {
         max-width: 500px;
       }
@@ -80,6 +96,10 @@
         }
       }
     }
+  }
+
+  .background {
+    display: none;
   }
 }
 
